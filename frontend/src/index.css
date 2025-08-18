@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* //providing the basic properties for the app */
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+  scroll-behavior: smooth;
+}
+
+body{
+  min-height: 100vh;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.app{
+  width: 80%;
+  margin: auto;
+}
+
+
+/* fade in animation */
+@keyframes fadeIn {
+  0%{
+    opacity:0 ;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/* Transparent navbar overlay for home page */
+.app.home-page .navbar {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: 90vw;
+  margin: 0;
+  padding: 0px 30px;
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: white !important;
+  font-size: 30px !important;
+  /* padding: 5px 0; */
+}
+
+.app.home-page .navbar .navbar-menu {
+  color: white !important;
+  font-size: 30px !important;
+  padding: 5px 0;
+}
+
+.app.home-page .navbar .navbar-menu li:hover {
+  color: #ff6b35 !important;
+}
+
+.app.home-page .navbar button {
+  color: white !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  background: transparent !important;
+}
+
+.app.home-page .navbar button:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.app.home-page .navbar .logo {
+  filter: brightness(1.2);
+}
