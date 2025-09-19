@@ -105,9 +105,4 @@ See [`backend/.env.example`](backend/.env.example) for required environment vari
 - Multer (file uploads)
 
 ## License
-
-This project is licensed under the MIT License.
-
----
-
 For any questions or issues, please open an issue on [GitHub](https://github.com/samarmeena9920/Susangat-Food-Order-main).
